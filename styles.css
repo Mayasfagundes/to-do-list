@@ -1,0 +1,90 @@
+
+
+:root{
+    --cor-primaria: blueviolet;
+    --cor-secundaria: darkcyan;
+    --cor-terciaria: cadetblue;
+    --cor-quarternaria: rgb(96, 155, 110);
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--cor-quarternaria);
+    margin: 0;
+    text-align: center; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 800px;
+}
+
+.calendario {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.calendario__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.calendario__container label {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.lista__tarefas {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.lista__tarefas-titulo {
+    margin-top: 0;
+}
+
+.lista__tarefas ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.lista__tarefas li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.lista__tarefas input[type="text"] {
+    width: calc(100% - 100px);
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.lista__tarefas button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task-list button:hover {
+    background-color:black;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List com Calendário</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calendario">
+            <div class="calendario__container">
+                <!-- Campo de entrada para selecionar a data -->
+                <label for="task-date" id="calendario__texto">Selecione a Data:</label>
+                <input type="date" id="task-date">
+            </div>
+        </div>
+
+        <div class="lista__container">
+            <div class="lista__tarefas">
+            <h2 class="lista__tarefas-titulo">Tarefas</h2>
+            <ul id="tasks"></ul>
+            <input type="text" id="new-task" placeholder="Nova tarefa">
+            <button onclick="addTask()">Adicionar</button>
+        </div>
+        <div class="lista__tarefas">
+            <h2>Tarefas em Andamento</h2>
+            <ul id="in-progress-tasks"></ul>
+        </div>
+        <div class="lista__tarefas">
+            <h2>Tarefas Concluídas</h2>
+            <ul id="completed-tasks"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
